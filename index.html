@@ -1,99 +1,1208 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid y flex</title>
-    <link rel="stylesheet" href="./estilo.css" />
-  </head>
-  <body>
-    <h1> Ve Gratis</h1>
-    <div class="slider">
-        <img
-        src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
-      />
-      <img
-      src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
-    />
-      <img
-    src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
-  />
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
-        />
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/dc8eccaf8d0729a43d4d35549f923877.jpe"
-        />
+<html lang="es">
 
-        />
-        
-    
-        <img
-        src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
-      />
-      <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
-        />
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ve Gratis</title>
+
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header id="header">
+
+    <a href="#" class="logo">
+      VE<span>GRATIS</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#tendencias">Tendencias</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#top">Top 10</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <div class="search-box">
+
+        <span>⌕</span>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar..."
+        >
+
+      </div>
+
+      <button class="profile">
+        N
+      </button>
+
     </div>
-    <h3>Catalogo</h3>
-    <div class="grilla">
-      <div>
-        <h2>IMG 1</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
-        />
+
+  </header>
+
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero" id="inicio">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <span class="featured-label">
+        ✦ DESTACADO
+      </span>
+
+      <h1>
+        The Case Study<br>
+        <span>of Vanitas</span>
+      </h1>
+
+      <div class="hero-meta">
+
+        <span class="match">
+          98% recomendado
+        </span>
+
+        <span>2021</span>
+
+        <span>16+</span>
+
+        <span>Fantasy</span>
+
+        <span>Mystery</span>
+
       </div>
-      <div>
-        <h2>IMG 2</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
-        />
+
+      <p>
+        En un París alternativo lleno de vampiros,
+        magia y secretos, Vanitas posee un misterioso
+        libro capaz de cambiar el destino de toda una raza.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="watch-btn" onclick="showMessage()">
+          ▶ Ver ahora
+        </button>
+
+        <button
+          class="info-btn"
+          onclick="openModal(
+            'The Case Study of Vanitas',
+            'Fantasy · Mystery · 2021',
+            'Un misterioso grimorio, vampiros y una ciudad llena de secretos.'
+          )"
+        >
+          ⓘ Más información
+        </button>
+
       </div>
-      <div>
-        <h2>IMG 3</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
-        />
-      </div>
-      <div>
-        <h2>IMG 4</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
-        />
-      </div>
-      <div>
-        <h2>IMG 5</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
-        />
-      </div>
-      <div>
-        <h2>IMG 6</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/dc8eccaf8d0729a43d4d35549f923877.jpe"
-        />
-      </div>
-      <div>
-        <h2>IMG 7</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
-        />
-      </div>
-      <div>
-        <h2>IMG 8</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/dc8eccaf8d0729a43d4d35549f923877.jpe"
-        />
-      </div>
-      <div>
-        <h2>IMG 9</h2>
-        <img
-          src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
-        />
-      </div>
-      
+
     </div>
-  </body>
+
+    <div class="hero-side-info">
+
+      <span>16+</span>
+
+    </div>
+
+    <div class="scroll-indicator">
+      ↓
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+
+    <!-- TRENDING -->
+
+    <section class="content-section" id="tendencias">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            AHORA MISMO
+          </span>
+
+          <h2>
+            Tendencias
+          </h2>
+
+        </div>
+
+        <div class="slider-buttons">
+
+          <button onclick="slideRow('trendingRow', -1)">
+            ‹
+          </button>
+
+          <button onclick="slideRow('trendingRow', 1)">
+            ›
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="slider" id="trendingRow">
+
+
+        <article
+          class="movie-card"
+          data-title="The Case Study of Vanitas"
+          onclick="openCard(this)"
+        >
+
+          <div class="poster">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
+              alt="Vanitas"
+            >
+
+            <div class="card-gradient"></div>
+
+            <div class="card-play">
+              ▶
+            </div>
+
+            <div class="rating">
+              ★ 9.1
+            </div>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              The Case Study of Vanitas
+            </h3>
+
+            <p>
+              Fantasy · Mystery
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="movie-card"
+          data-title="Kamisama Kiss"
+          onclick="openCard(this)"
+        >
+
+          <div class="poster">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
+              alt="Kamisama Kiss"
+            >
+
+            <div class="card-gradient"></div>
+
+            <div class="card-play">
+              ▶
+            </div>
+
+            <div class="rating">
+              ★ 8.8
+            </div>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Kamisama Kiss
+            </h3>
+
+            <p>
+              Romance · Fantasy
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="movie-card"
+          data-title="D.Gray-man"
+          onclick="openCard(this)"
+        >
+
+          <div class="poster">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
+              alt="D Gray Man"
+            >
+
+            <div class="card-gradient"></div>
+
+            <div class="card-play">
+              ▶
+            </div>
+
+            <div class="rating">
+              ★ 9.0
+            </div>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              D.Gray-man
+            </h3>
+
+            <p>
+              Action · Supernatural
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="movie-card"
+          data-title="Vanitas"
+          onclick="openCard(this)"
+        >
+
+          <div class="poster">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
+              alt="Vanitas"
+            >
+
+            <div class="card-gradient"></div>
+
+            <div class="card-play">
+              ▶
+            </div>
+
+            <div class="rating">
+              ★ 9.1
+            </div>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Vanitas
+            </h3>
+
+            <p>
+              Mystery · Adventure
+            </p>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="movie-card"
+          data-title="Fantasy Journey"
+          onclick="openCard(this)"
+        >
+
+          <div class="poster">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/dc8eccaf8d0729a43d4d35549f923877.jpe"
+              alt="Fantasy Journey"
+            >
+
+            <div class="card-gradient"></div>
+
+            <div class="card-play">
+              ▶
+            </div>
+
+            <div class="rating">
+              ★ 8.6
+            </div>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Fantasy Journey
+            </h3>
+
+            <p>
+              Adventure · Action
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- TOP 10 -->
+
+    <section class="content-section" id="top">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            LOS MÁS VISTOS
+          </span>
+
+          <h2>
+            Top 10 hoy
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="top-slider">
+
+
+        <article class="top-item">
+
+          <span class="top-number">
+            1
+          </span>
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
+            alt=""
+          >
+
+        </article>
+
+
+        <article class="top-item">
+
+          <span class="top-number">
+            2
+          </span>
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
+            alt=""
+          >
+
+        </article>
+
+
+        <article class="top-item">
+
+          <span class="top-number">
+            3
+          </span>
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
+            alt=""
+          >
+
+        </article>
+
+
+        <article class="top-item">
+
+          <span class="top-number">
+            4
+          </span>
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/dc8eccaf8d0729a43d4d35549f923877.jpe"
+            alt=""
+          >
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CATÁLOGO -->
+
+    <section class="content-section" id="catalogo">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            PARA VOS
+          </span>
+
+          <h2>
+            Explora el catálogo
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="grilla">
+
+
+        <article
+          class="catalog-card"
+          data-title="Vanitas"
+          onclick="openCard(this)"
+        >
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
+            alt=""
+          >
+
+          <div class="catalog-overlay">
+
+            <span>
+              NUEVO
+            </span>
+
+            <h3>
+              Vanitas
+            </h3>
+
+            <p>
+              Fantasy · 24 episodios
+            </p>
+
+            <div class="catalog-buttons">
+
+              <button>
+                ▶
+              </button>
+
+              <button
+                class="list-button"
+                onclick="toggleList(event, this)"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="catalog-card"
+          data-title="Kamisama Kiss"
+          onclick="openCard(this)"
+        >
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
+            alt=""
+          >
+
+          <div class="catalog-overlay">
+
+            <span>
+              POPULAR
+            </span>
+
+            <h3>
+              Kamisama Kiss
+            </h3>
+
+            <p>
+              Romance · Fantasy
+            </p>
+
+            <div class="catalog-buttons">
+
+              <button>▶</button>
+
+              <button
+                onclick="toggleList(event, this)"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="catalog-card"
+          data-title="D.Gray-man"
+          onclick="openCard(this)"
+        >
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
+            alt=""
+          >
+
+          <div class="catalog-overlay">
+
+            <span>
+              TOP
+            </span>
+
+            <h3>
+              D.Gray-man
+            </h3>
+
+            <p>
+              Action · Supernatural
+            </p>
+
+            <div class="catalog-buttons">
+
+              <button>▶</button>
+
+              <button
+                onclick="toggleList(event, this)"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="catalog-card"
+          data-title="Vanitas No Carte"
+          onclick="openCard(this)"
+        >
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
+            alt=""
+          >
+
+          <div class="catalog-overlay">
+
+            <span>
+              98%
+            </span>
+
+            <h3>
+              Vanitas No Carte
+            </h3>
+
+            <p>
+              Mystery · Drama
+            </p>
+
+            <div class="catalog-buttons">
+
+              <button>▶</button>
+
+              <button
+                onclick="toggleList(event, this)"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="catalog-card"
+          data-title="Gods and Spirits"
+          onclick="openCard(this)"
+        >
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/6a0ef6f3c75c62e2c844981db222437b.jpe"
+            alt=""
+          >
+
+          <div class="catalog-overlay">
+
+            <span>
+              NUEVO
+            </span>
+
+            <h3>
+              Gods & Spirits
+            </h3>
+
+            <p>
+              Fantasy · Romance
+            </p>
+
+            <div class="catalog-buttons">
+
+              <button>▶</button>
+
+              <button
+                onclick="toggleList(event, this)"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="catalog-card"
+          data-title="Dark Exorcist"
+          onclick="openCard(this)"
+        >
+
+          <img
+            src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
+            alt=""
+          >
+
+          <div class="catalog-overlay">
+
+            <span>
+              TRENDING
+            </span>
+
+            <h3>
+              Dark Exorcist
+            </h3>
+
+            <p>
+              Action · Dark Fantasy
+            </p>
+
+            <div class="catalog-buttons">
+
+              <button>▶</button>
+
+              <button
+                onclick="toggleList(event, this)"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTINUE WATCHING -->
+
+    <section class="content-section">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            CONTINUAR
+          </span>
+
+          <h2>
+            Seguir viendo
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="continue-grid">
+
+
+        <article class="continue-card">
+
+          <div class="continue-image">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe"
+              alt=""
+            >
+
+            <button>
+              ▶
+            </button>
+
+          </div>
+
+          <div class="continue-info">
+
+            <h3>
+              The Case Study of Vanitas
+            </h3>
+
+            <p>
+              Episodio 7
+            </p>
+
+            <div class="progress">
+
+              <div style="width: 67%"></div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <article class="continue-card">
+
+          <div class="continue-image">
+
+            <img
+              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/66dd2fb27df0de4a19509a3daafcc6b2.jpe"
+              alt=""
+            >
+
+            <button>
+              ▶
+            </button>
+
+          </div>
+
+          <div class="continue-info">
+
+            <h3>
+              D.Gray-man
+            </h3>
+
+            <p>
+              Episodio 14
+            </p>
+
+            <div class="progress">
+
+              <div style="width: 42%"></div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div class="modal" id="modal">
+
+    <div class="modal-box">
+
+      <button
+        class="modal-close"
+        onclick="closeModal()"
+      >
+        ×
+      </button>
+
+      <div class="modal-glow"></div>
+
+      <span class="modal-label">
+        ✦ VE GRATIS ORIGINAL
+      </span>
+
+      <h2 id="modalTitle">
+        Title
+      </h2>
+
+      <p
+        class="modal-meta"
+        id="modalMeta"
+      >
+        Fantasy
+      </p>
+
+      <p id="modalDescription">
+        Description
+      </p>
+
+      <div class="modal-buttons">
+
+        <button class="watch-btn">
+          ▶ Ver ahora
+        </button>
+
+        <button class="info-btn">
+          + Mi lista
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- MOBILE NAV -->
+
+  <nav class="mobile-nav">
+
+    <a href="#inicio">
+      <span>⌂</span>
+      Inicio
+    </a>
+
+    <a href="#tendencias">
+      <span>✦</span>
+      Tendencias
+    </a>
+
+    <a href="#catalogo">
+      <span>▦</span>
+      Catálogo
+    </a>
+
+    <a href="#top">
+      <span>★</span>
+      Top
+    </a>
+
+  </nav>
+
+
+
+  <!-- MESSAGE -->
+
+  <div
+    class="toast"
+    id="toast"
+  >
+    ▶ Reproduciendo...
+  </div>
+
+
+
+  <script>
+
+    /* HEADER */
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        const header =
+          document.getElementById("header");
+
+        header.classList.toggle(
+          "scrolled",
+          window.scrollY > 50
+        );
+
+      }
+    );
+
+
+
+    /* SLIDER BUTTONS */
+
+    function slideRow(id, direction) {
+
+      const slider =
+        document.getElementById(id);
+
+      slider.scrollBy({
+
+        left:
+          direction *
+          Math.min(
+            window.innerWidth * 0.7,
+            800
+          ),
+
+        behavior: "smooth"
+
+      });
+
+    }
+
+
+
+    /* MODAL */
+
+    const modal =
+      document.getElementById("modal");
+
+
+    function openModal(
+      title,
+      meta,
+      description
+    ) {
+
+      document.getElementById(
+        "modalTitle"
+      ).textContent = title;
+
+
+      document.getElementById(
+        "modalMeta"
+      ).textContent = meta;
+
+
+      document.getElementById(
+        "modalDescription"
+      ).textContent =
+        description;
+
+
+      modal.classList.add("open");
+
+      document.body.style.overflow =
+        "hidden";
+
+    }
+
+
+    function openCard(card) {
+
+      const title =
+        card.dataset.title;
+
+
+      openModal(
+
+        title,
+
+        "★ 9.0 · 2024 · 16+",
+
+        "Descubre esta historia y continúa explorando el catálogo de Ve Gratis."
+
+      );
+
+    }
+
+
+    function closeModal() {
+
+      modal.classList.remove("open");
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    modal.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeModal();
+
+        }
+
+      }
+    );
+
+
+
+    /* MI LISTA */
+
+    function toggleList(
+      event,
+      button
+    ) {
+
+      event.stopPropagation();
+
+
+      if (
+        button.classList.contains(
+          "saved"
+        )
+      ) {
+
+        button.classList.remove(
+          "saved"
+        );
+
+        button.textContent = "+";
+
+      }
+
+      else {
+
+        button.classList.add(
+          "saved"
+        );
+
+        button.textContent = "✓";
+
+      }
+
+    }
+
+
+
+    /* SEARCH */
+
+    const searchInput =
+      document.getElementById(
+        "searchInput"
+      );
+
+
+    searchInput.addEventListener(
+      "input",
+      function() {
+
+        const query =
+          this.value
+            .toLowerCase()
+            .trim();
+
+
+        const cards =
+          document.querySelectorAll(
+            "[data-title]"
+          );
+
+
+        cards.forEach(card => {
+
+          const title =
+            card.dataset.title
+              .toLowerCase();
+
+
+          card.style.display =
+            title.includes(query)
+              ? ""
+              : "none";
+
+        });
+
+      }
+    );
+
+
+
+    /* TOAST */
+
+    function showMessage() {
+
+      const toast =
+        document.getElementById(
+          "toast"
+        );
+
+
+      toast.classList.add(
+        "show"
+      );
+
+
+      setTimeout(
+        () => {
+
+          toast.classList.remove(
+            "show"
+          );
+
+        },
+        2000
+      );
+
+    }
+
+
+
+    /* ESCAPE */
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeModal();
+
+        }
+
+      }
+    );
+
+  </script>
+
+</body>
+
 </html>
